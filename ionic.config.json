@@ -1,0 +1,8 @@
+{
+  "name": "academy-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "a4c52aa5"
+}
