@@ -24,3 +24,21 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: 'Smooch Sans';
+  src: url('./assets/fonts/SmoochSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Smooch Sans';
+  src: url('./assets/fonts/SmoochSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+ion-title, ion-label, ion-button {
+  font-family: 'Smooch Sans', sans-serif;
+}

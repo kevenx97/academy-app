@@ -1,0 +1,10 @@
+.section-container {
+  padding: 20px;
+  .section-title {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,13 @@
+<swiper-container *ngIf="slides" class="slides-container" slides-per-view="1.5">
+  <swiper-slide *ngFor="let slide of slides" class="slide-content">
+    <ion-img alt="man" [src]="slide.img"></ion-img>
+    <div *ngIf="slide.status" class="slide-text">
+      <ion-label color="tertiary" class="subtitle">{{ slide.status }}</ion-label>
+      <ion-label class="title">{{ slide.name }}</ion-label>
+    </div>
+    <div *ngIf="!slide.status" class="slide-option">
+      <ion-icon size="large" color="dark" slot="icon-only" name="add-circle-outline"></ion-icon>
+      <ion-label>Novo <br>Treino</ion-label>
+    </div>
+  </swiper-slide>
+</swiper-container>

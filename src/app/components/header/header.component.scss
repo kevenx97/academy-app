@@ -1,0 +1,26 @@
+ion-header {
+  box-shadow: none;
+  ion-toolbar {
+    --border-width: 0;
+    --background: #202020;
+    .circle-button {
+      width: 30px;
+      min-height: 30px;
+      --background: var(--ion-color-dark-contrast);
+      --padding-end: 0;
+      --padding-start: 0;
+      ion-icon {
+        font-size: 14px;
+      }
+    }
+    ion-title {
+      text-align: center;
+    }
+    ion-badge {
+      padding: 2px 4px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let content of contents" class="section-container">
+    <div class="section-title">
+      <ion-label>{{content.name}}</ion-label>
+      <ion-button *ngIf="content.type === 'workout'" color="dark-contrast" size="small">
+        <ion-icon color="tertiary" slot="icon-only" name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <app-slider [slides]="content.list"></app-slider>
+  </div>
+</ion-content>
